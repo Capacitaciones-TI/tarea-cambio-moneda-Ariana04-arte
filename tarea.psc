@@ -64,6 +64,7 @@ Algoritmo moneda
 			FinSi
 		FinSi
     FinSi
+	
     Si moneda_fuente = "AUD" Entonces
 		Si moneda_destino = "USD" Entonces
 			resultado <- cantidad * 0.67
@@ -82,3 +83,4 @@ Algoritmo moneda
     FinSi	
 	Escribir "La cantidad en ", moneda_destino, " es ", resultado
 FinAlgoritmo
+
