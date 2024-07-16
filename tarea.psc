@@ -1,11 +1,4 @@
-Algoritmo moneda
-	Leer moneda1
-	Leer moneda2
-	Leer cantidad
-	Si moneda1 es "USD" y moneda2 es "EUR" Entonces
-		resultado <- cantidad * 0.93
-	FinSi
-	Escribir "La cantidad en ",moneda2, "es ",resultado 
+Algoritmo CambioDeMoneda
 	Definir moneda_fuente, moneda_destino Como Caracter
 	Definir cantidad, resultado Como Real
 	Escribir "Ingrese la moneda fuente (USD, EUR, GBP, AUD):"
@@ -24,13 +17,13 @@ Algoritmo moneda
 				SiNo Si moneda_destino = "AUD" Entonces
 						resultado <- cantidad * 1.50
 					SiNo
-						Escribir "Moneda destino no válida."
+						Escribir "Moneda destino no vÃ¡lida."
 					FinSi
 				FinSi
 			FinSi
 		FinSi
 	SiNo
-		Escribir "Moneda fuente no válida."
+		Escribir "Moneda fuente no vÃ¡lida."
     FinSi
     Si moneda_fuente = "EUR" Entonces
 		Si moneda_destino = "USD" Entonces
@@ -42,7 +35,7 @@ Algoritmo moneda
 				SiNo Si moneda_destino = "AUD" Entonces
 						resultado <- cantidad * 1.61
 					SiNo
-						Escribir "Moneda destino no válida."
+						Escribir "Moneda destino no vÃ¡lida."
 					FinSi
 				FinSi
 			FinSi
@@ -58,13 +51,12 @@ Algoritmo moneda
 				SiNo Si moneda_destino = "AUD" Entonces
 						resultado <- cantidad * 1.90
 					SiNo
-						Escribir "Moneda destino no válida."
+						Escribir "Moneda destino no vÃ¡lida."
 					FinSi
 				FinSi
 			FinSi
 		FinSi
     FinSi
-	
     Si moneda_fuente = "AUD" Entonces
 		Si moneda_destino = "USD" Entonces
 			resultado <- cantidad * 0.67
@@ -75,12 +67,11 @@ Algoritmo moneda
 				SiNo Si moneda_destino = "AUD" Entonces
 						resultado <- cantidad * 1
 					SiNo
-						Escribir "Moneda destino no válida."
+						Escribir "Moneda destino no vÃ¡lida."
 					FinSi
 				FinSi
 			FinSi
 		FinSi
     FinSi	
-	Escribir "La cantidad en ", moneda_destino, " es ", resultado
+Escribir "La cantidad en ", moneda_destino, " es ", resultado
 FinAlgoritmo
-
